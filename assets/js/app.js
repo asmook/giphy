@@ -18,7 +18,7 @@ createButtons();
 $(".buttons").on("click", "button", function(){
 	$(".coolGifs").empty();
 	var chosenAnimal = $(this).text();
-	var QueryString = "http://api.giphy.com/v1/gifs/search?q=" + chosenAnimal +"&limit=5&rating=g&api_key=dc6zaTOxFJmzC";
+	var QueryString = "https://api.giphy.com/v1/gifs/search?q=" + chosenAnimal +"&limit=5&rating=g&api_key=dc6zaTOxFJmzC";
 
 	$.ajax({
 		method: "GET",
